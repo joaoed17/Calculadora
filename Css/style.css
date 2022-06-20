@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+
+    background: #301014;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#base {
+    display: flex;
+
+    gap: 3rem;
+
+    height: 65rem;
+    width: 100rem;
+}
+
+#corpo {
+    display: grid;
+    grid-template-areas:
+    "limpar apagar porcentagem divisao"
+    "um dois tres multiplicacao"
+    "quatro cinco seis subtracao"
+    "sete oito nove adicao"
+    "igualdade igualdade zero adicao" 
+    ;
+    gap: .8rem;
+
+    border-radius: 2rem;
+    filter: drop-shadow(1rem 1rem 1rem #00000070);
+
+    background: #EDF4ED;
+
+    padding: 1rem;
+    
+    min-height: 65rem;
+    min-width: 50rem;
+}
+
+.button {
+    font-size: 4rem;
+    font-weight: bolder;
+    
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #301014;
+}
+
+.button:hover {
+    background: #dae1da;
+    
+    cursor: pointer;
+    
+    filter: drop-shadow(.2rem .2rem .3rem #301014a2);
+}
+
+#um {
+    grid-area: um;
+}
+
+#dois {
+    grid-area: dois;
+}
+
+#tres {
+    grid-area: tres;
+}
+
+#quatro {
+    grid-area: quatro;
+}
+
+#cinco {
+    grid-area: cinco;
+}
+
+#seis {
+    grid-area: seis;
+}
+
+#sete {
+    grid-area: sete;
+}
+
+#oito {
+    grid-area: oito;
+}
+
+#nove {
+    grid-area: nove;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#adicao {
+    grid-area: adicao;
+}
+
+#subtracao {
+    grid-area: subtracao;
+}
+
+#divisao {
+    grid-area: divisao;
+}
+
+#multiplicacao {
+    grid-area: multiplicacao;
+}
+
+#porcentagem {
+    grid-area: porcentagem;
+}
+
+#limpar {
+    grid-area: limpar;
+}
+
+#apagar {
+    grid-area: apagar;
+}
+
+#igualdade {
+    grid-area: igualdade;
+}
+
+.dark {
+    background: #301014;
+    color: #EDF4ED;
+}
+
+.dark:hover {
+    background: #301014;
+}
+
+/* Resultado */
+
+#retorno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    background: #EDF4ED;
+
+    padding: 1rem;
+
+    border-radius: 2rem;
+    filter: drop-shadow(1rem 1rem 1rem #00000070);
+    
+    height: 25rem;
+    width: 50rem;
+
+}
+
+#visualizar {
+    background: #fff;
+
+    border-radius: 1em;
+
+    height: 14rem;
+    width: 47rem;
+
+}
+
+#result {
+    position: relative;
+    top: 10rem;
+    right: .8rem;
+    text-align: right;
+
+    font-size: 3rem;
+    color: #301014;
+}
+
+#resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35.5rem;
+
+    width: 57rem;
+    height: 7rem;
+}
+
+#total {
+    color: #301014;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#valor-total {
+    color: #301014;
+    font-size: 3rem;
+    font-weight: bold;
+}
